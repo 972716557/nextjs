@@ -1,6 +1,7 @@
 // 输入了不存在的页面，返回404页面
 
 import Link from "next/link";
+import "./globals.css";
 
 export default function NotFound() {
   return (

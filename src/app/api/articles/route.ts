@@ -1,7 +1,15 @@
 import { NextResponse } from "next/server";
 import db from "@/db";
 // get  api/articles
-export async function GET(request: Request) {}
+export async function GET(request: Request) {
+  const data = await db.data;
+  console.log(data, "data");
+  return NextResponse.json({
+    code: 200,
+    data: data.photos,
+    message: "success",
+  });
+}
 
 export async function POST(request: Request) {
   const data = await request.json();

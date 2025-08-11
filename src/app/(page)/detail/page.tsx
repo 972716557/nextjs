@@ -5,5 +5,5 @@ export const metadata: Metadata = {
   title: "leekono",
 };
 export default function Details() {
-  return <div></div>;
+  return <div>fawfeaf</div>;
 }

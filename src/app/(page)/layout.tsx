@@ -23,8 +23,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  admin,
+  normal,
 }: Readonly<{
   children: React.ReactNode;
+  admin?: React.ReactNode;
+  normal?: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -33,6 +37,10 @@ export default function RootLayout({
       >
         <AntdRegistry>
           <Header />
+          <div className="flex">
+            {admin}
+            {normal}
+          </div>
           {children}
         </AntdRegistry>
       </body>

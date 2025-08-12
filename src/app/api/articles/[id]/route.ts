@@ -54,7 +54,7 @@ export async function POST(
 
   return NextResponse.json({
     code: 200,
-    data: data,
+    data,
     message: "success",
   });
 }

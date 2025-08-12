@@ -2,14 +2,14 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
   const { username, password } = await request.json();
-  console.log(username, password);
-  const r = await fetch("https://echo.apipost.cn/login.php", {
+  const r = await fetch("https://jsonplaceholder.typicode.com/auth/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ email: username, password }),
+    body: JSON.stringify({ username, password }),
   });
+  console.log("r", r);
   const data = await r.json();
   // 这种方式跟下面的方式是等价的
   // const response = NextResponse.json({
@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
   //   httpOnly: true,
   //   sameSite: "strict",
   // });
-
+  return NextResponse.json({});
   return (
     NextResponse.json({
       data,

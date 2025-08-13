@@ -1,5 +1,5 @@
-import React, { use } from "react";
-import Counter from "./_component";
+import React from "react";
+import Counter from "../../../components/_component";
 
 export const metadata = {
   title: {
@@ -9,19 +9,13 @@ export const metadata = {
   },
 };
 
-export default async function Page({
-  params,
-  searchParams,
-}: {
-  params: Promise<{ id: string }>;
-  searchParams: Promise<{ lang?: "zh" | "en" }>;
-}) {
+export default async function Page() {
   // 匹配动态id
-  const { id } = await params;
+  // const { id } = await params;
   // 匹配问号后面的参数
-  const { lang } = await searchParams;
-  if (Math.random() > 0.5) {
-    throw new Error("Error");
-  }
+  // const { lang } = await searchParams;
+  // if (Math.random() > 0.5) {
+  //   throw new Error("Error");
+  // }
   return <Counter />;
 }

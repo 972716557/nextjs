@@ -1,4 +1,7 @@
 import { JSONFilePreset } from "lowdb/node";
-const defaultData = { photos: [] };
+interface DefaultData {
+  photos: { id: string; src: string }[];
+}
+const defaultData: DefaultData = { photos: [] };
 const db = await JSONFilePreset("db.json", defaultData);
 export default db;

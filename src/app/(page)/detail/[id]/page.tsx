@@ -2,7 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 
 interface Params {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
@@ -14,7 +14,6 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 }
 export default async function DetailPage({ params }: Params) {
   const { id } = await params;
-  await new Promise((resolve) => setTimeout(resolve, 1000));
   return (
     <div>
       <h1>Test</h1>

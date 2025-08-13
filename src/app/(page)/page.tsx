@@ -5,7 +5,7 @@ export const metadata = {
   title: "这是主页",
   description: "主页内容",
 };
-export default function page() {
+export default function Page() {
   return (
     <div>
       这是page页面

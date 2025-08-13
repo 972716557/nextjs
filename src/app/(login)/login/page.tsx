@@ -18,11 +18,11 @@ const App: React.FC = () => {
   const router = useRouter();
 
   const onFinish: FormProps<FieldType>["onFinish"] = async (values) => {
-    fetch("/api/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(values),
-    });
+    // fetch("/api/login", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify(values),
+    // });
     router.push("/");
   };
   return (

@@ -1,5 +1,5 @@
 "use client";
-import React, { use } from "react";
+import React from "react";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 const data = [
@@ -43,7 +43,7 @@ export default function Page() {
       className="fixed  bg-gray-500/[.8] container top-0 left-0 h-dvh mx-auto p-40 flex justify-center items-center flex-col space-y-4"
     >
       <Image
-        src={data[params.id].src}
+        src={data[Number(params.id)].src}
         className="rounded-lg"
         alt="logo"
         width={400}

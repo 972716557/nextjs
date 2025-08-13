@@ -10,7 +10,6 @@ export default async function middleware(request: NextRequest) {
   if (request.nextUrl.pathname.startsWith("/about")) {
     return NextResponse.rewrite(new URL("/", request.url));
   }
-  const pathname = request.nextUrl.pathname;
 }
 // export const config = {
 //   matcher: ["/about"],

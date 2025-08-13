@@ -30,9 +30,13 @@ const data = [
     src: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
   },
 ];
-export default async function Page({ params }: { params: { id: string } }) {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
   const { id } = await params;
-  const src = data[id].src;
+  const src = data[Number(id)].src;
   return (
     <div className="container mx-auto p-40 flex justify-center items-center flex-col space-y-4">
       <Image

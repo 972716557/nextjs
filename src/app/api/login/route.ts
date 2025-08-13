@@ -22,15 +22,15 @@ export async function POST(request: NextRequest) {
   //   sameSite: "strict",
   // });
   return NextResponse.json({});
-  return (
-    NextResponse.json({
-      data,
-    }),
-    {
-      // 设置TOKEN 在cookie中
-      headers: {
-        "Set-Cookie": `token=${data.token}; Path=/; HttpOnly; SameSite=Strict; Max-Age=3600`,
-      },
-    }
-  );
+  // return (
+  //   NextResponse.json({
+  //     data,
+  //   }),
+  //   {
+  //     // 设置TOKEN 在cookie中
+  //     headers: {
+  //       "Set-Cookie": `token=${data.token}; Path=/; HttpOnly; SameSite=Strict; Max-Age=3600`,
+  //     },
+  //   }
+  // );
 }

@@ -13,6 +13,9 @@ export default function Header() {
       router.push("/login");
     });
   };
+  // if (Math.random() > 0.5) {
+  //   throw new Error("Error in RootLayout"); // 模拟错误
+  // }
   return (
     <div className="flex items-center justify-between">
       <Link href="/">Home</Link>

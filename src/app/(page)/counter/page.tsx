@@ -1,5 +1,5 @@
 import React from "react";
-import Counter from "../../../components/_component";
+import Counter from "./_component";
 
 export const metadata = {
   title: {

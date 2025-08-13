@@ -1,7 +1,10 @@
-"use client";
 import { Button } from "antd";
 import React from "react";
 
+export const metadata = {
+  title: "这是主页",
+  description: "主页内容",
+};
 export default function page() {
   return (
     <div>

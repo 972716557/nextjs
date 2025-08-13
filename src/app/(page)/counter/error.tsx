@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
 
-export default function ErrorBoundary() {
-  return <div>Error in review page</div>;
+export default function ErrorBoundary({ error }: { error: Error }) {
+  return <div>{error.message}</div>;
 }

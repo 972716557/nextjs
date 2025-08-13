@@ -8,6 +8,7 @@ export const metadata = {
     absolute: "计数器", // 脱离template模版，直接使用这个标题
   },
 };
+
 export default async function Page({
   params,
   searchParams,
@@ -19,5 +20,8 @@ export default async function Page({
   const { id } = await params;
   // 匹配问号后面的参数
   const { lang } = await searchParams;
+  if (Math.random() > 0.5) {
+    throw new Error("Error");
+  }
   return <Counter />;
 }

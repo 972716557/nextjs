@@ -1,9 +1,11 @@
+"use client";
+
 import { Card } from "antd";
 import React from "react";
 
 export default function Page() {
   return (
-    <Card bordered className="w-[200px] h-[200px]">
+    <Card variant="outlined" className="w-[200px] h-[200px]">
       左下角的
     </Card>
   );

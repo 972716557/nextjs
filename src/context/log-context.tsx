@@ -7,11 +7,7 @@ export const LogContext = createContext<{
 });
 
 export const LogProvider = ({ children }: { children: ReactNode }) => {
-  return (
-    <LogContext.Provider value={{ data: "log" }}>
-      {children}
-    </LogContext.Provider>
-  );
+  return <LogContext value={{ data: "log" }}>{children}</LogContext>;
 };
 
 export const useLog = () => {

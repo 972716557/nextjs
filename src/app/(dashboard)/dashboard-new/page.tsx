@@ -2,7 +2,7 @@ import { Card } from "antd";
 import Link from "next/link";
 import React from "react";
 
-export default function page() {
+export default function Page() {
   return (
     <Card className="w-[200px] h-[200px]">
       这是新版的页面

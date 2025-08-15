@@ -6,11 +6,13 @@ const seedProducts = async () => {
     await prisma.product.createMany({
       data: [
         {
+          id: 1,
           name: "Product 1",
           description: "Description for Product 1",
           price: 10,
         },
         {
+          id: 2,
           name: "Product 2",
           description: "Description for Product 2",
           price: 20,

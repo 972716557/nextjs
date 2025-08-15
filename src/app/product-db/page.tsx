@@ -2,6 +2,7 @@ import React from "react";
 import { getProducts } from "../prisma-db";
 import { Product } from "@/generated/prisma";
 import { Button } from "antd";
+import DeleteButton from "./_delete-button";
 
 export default async function Page() {
   // const data = await fetch("/api/product", {
@@ -23,7 +24,7 @@ export default async function Page() {
           <div>{product.description}</div>
           <div className="text-lg font-medium">{product.price}</div>
           <div>
-            <Button>删除</Button>
+            <DeleteButton id={product.id} />
           </div>
         </div>
       ))}

@@ -6,6 +6,7 @@ import { getTranslations, getLocale } from "next-intl/server";
 export default async function Page() {
   const t = await getTranslations("dashboard");
   const locale = await getLocale();
+  await new Promise((resolve) => setTimeout(resolve, 1000));
 
   return (
     <Card className="w-[200px] h-[200px]">

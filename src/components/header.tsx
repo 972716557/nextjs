@@ -2,27 +2,29 @@
 import { Button } from "antd";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useTranslations, useLocale } from "next-intl";
 import React from "react";
 
 export default function Header() {
   const router = useRouter();
+  const t = useTranslations("nav");
+  const locale = useLocale();
+
   const onClick = () => {
     fetch("/api/logout", {
       method: "DELETE",
     }).finally(() => {
-      router.push("/login");
+      router.push(`/${locale}/login`);
     });
   };
-  // if (Math.random() > 0.5) {
-  //   throw new Error("Error in RootLayout"); // 模拟错误
-  // }
+
   return (
     <div className="flex items-center justify-between">
-      <Link href="/">Home</Link>
-      <Link href="/detail">Detail</Link>
-      <Link href="/visitor">visitor</Link>
+      <Link href={`/${locale}`}>{t("home")}</Link>
+      <Link href={`/${locale}/detail`}>{t("detail")}</Link>
+      <Link href={`/${locale}/visitor`}>{t("visitor")}</Link>
       <Button onClick={onClick} type="primary">
-        退出登录
+        {t("logout")}
       </Button>
     </div>
   );

@@ -1,0 +1,92 @@
+{
+  "common": {
+    "switchLanguage": "Switch Language",
+    "chinese": "Chinese",
+    "english": "English",
+    "submit": "Submit",
+    "delete": "Delete",
+    "retry": "Retry",
+    "back": "Back"
+  },
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "list": "List",
+    "user": "User",
+    "login": "Login",
+    "logout": "Logout",
+    "detail": "Detail",
+    "visitor": "Visitor"
+  },
+  "header": {
+    "title": "Navigation"
+  },
+  "dashboard": {
+    "title": "Refresh only the right children via routing",
+    "left": "Left",
+    "leftBottom": "Left Bottom",
+    "oldVersion": "Old version right",
+    "newVersion": "This is the new version page",
+    "goToNew": "Go to new version",
+    "goToOld": "Back to old version"
+  },
+  "counter": {
+    "title": "Counter",
+    "increase": "Increase",
+    "decrease": "Decrease",
+    "detail": "Detail Page"
+  },
+  "page": {
+    "welcome": "Welcome",
+    "description": "This is a Next.js application",
+    "thisIsPage": "This is the page",
+    "button": "Button",
+    "admin": "This is admin",
+    "normal": "This is normal",
+    "defaultPage": "This is default page"
+  },
+  "log": {
+    "contextData": "Below is the context data",
+    "clientOnly": "This feature only works on the client side"
+  },
+  "product": {
+    "addProduct": "Add Product",
+    "name": "Name",
+    "price": "Price",
+    "description": "Description",
+    "pleaseInputName": "Please input name!",
+    "pleaseInputPrice": "Please input price!",
+    "pleaseInputDescription": "Please input description!"
+  },
+  "login": {
+    "username": "Username",
+    "password": "Password",
+    "pleaseInputUsername": "Please input your username!",
+    "pleaseInputPassword": "Please input your password!"
+  },
+  "list": {
+    "art": "Art",
+    "members": "{count} members",
+    "online": "{count} Online"
+  },
+  "photos": {
+    "title": "This is the title",
+    "description": "This is the description"
+  },
+  "error": {
+    "globalError": "Catch top-level errors like layout and header",
+    "notFoundTitle": "Sorry, we couldn't find this page.",
+    "notFoundDescription": "But don't worry, you can find plenty of other things on our homepage.",
+    "backToHomepage": "Back to homepage"
+  },
+  "component": {
+    "clientComponent": "This is a client component",
+    "serverComponent": "This is a server component"
+  },
+  "detail": {
+    "productList": "Product Detail List Page",
+    "productDetail": "Product Detail - {id}",
+    "productDetailPage": "Product Detail Page - {id}",
+    "test": "Test"
+  }
+}

@@ -1,9 +1,17 @@
 import { AntdRegistry } from "@ant-design/nextjs-registry";
+import { getLocale } from "next-intl/server";
 import React from "react";
 import "./globals.css";
-export default function Layout({ children }: { children: React.ReactNode }) {
+
+export default async function Layout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const locale = await getLocale();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body>
         <AntdRegistry>{children}</AntdRegistry>
       </body>

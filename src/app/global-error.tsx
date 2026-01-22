@@ -2,14 +2,17 @@
 import { Button } from "antd";
 import React from "react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export default function GlobalError() {
   const router = useRouter();
+  const t = useTranslations("error");
+
   return (
     <html lang="en">
       <body>
         <div>
-          捕获 layout、header这种顶层的错误
+          {t("globalError")}
           <Button type="primary" onClick={() => router.refresh()}>
             refresh
           </Button>

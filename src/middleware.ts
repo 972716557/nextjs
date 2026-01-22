@@ -1,16 +1,12 @@
-import { NextRequest, NextResponse } from "next/server";
-export default async function middleware(request: NextRequest) {
-  // 这里就可以对所有页面进行是否登录校验
-  // if (request.nextUrl.pathname !== "/login") {
-  //   const token = request.cookies.get("token");
-  //   if (!token) return NextResponse.redirect(new URL("/login", request.url));
-  // }
+import createMiddleware from "next-intl/middleware";
+import { locales, defaultLocale } from "./i18n/config";
 
-  //  可以使用NextResponse.rewrite对路由进行跳转
-  if (request.nextUrl.pathname.startsWith("/about")) {
-    return NextResponse.rewrite(new URL("/", request.url));
-  }
-}
-// export const config = {
-//   matcher: ["/about"],
-// };
+export default createMiddleware({
+  locales,
+  defaultLocale,
+  localePrefix: "always",
+});
+
+export const config = {
+  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
+};

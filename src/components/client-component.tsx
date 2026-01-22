@@ -1,4 +1,5 @@
 "use client";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 export default function ClientComponent({
@@ -6,10 +7,12 @@ export default function ClientComponent({
 }: {
   children?: React.ReactNode;
 }) {
+  const t = useTranslations("component");
+
   return (
     <div>
       {children}
-      这是客户端组件
+      {t("clientComponent")}
     </div>
   );
 }

@@ -1,0 +1,92 @@
+{
+  "common": {
+    "switchLanguage": "切换语言",
+    "chinese": "中文",
+    "english": "英文",
+    "submit": "提交",
+    "delete": "删除",
+    "retry": "重试",
+    "back": "返回"
+  },
+  "nav": {
+    "home": "首页",
+    "dashboard": "仪表盘",
+    "list": "列表",
+    "user": "用户",
+    "login": "登录",
+    "logout": "退出登录",
+    "detail": "详情",
+    "visitor": "访客"
+  },
+  "header": {
+    "title": "导航"
+  },
+  "dashboard": {
+    "title": "通过路由实现只刷新右边的children",
+    "left": "左边的",
+    "leftBottom": "左下角的",
+    "oldVersion": "旧版右边的",
+    "newVersion": "这是新版的页面",
+    "goToNew": "跳转到新版页面",
+    "goToOld": "返回旧版页面"
+  },
+  "counter": {
+    "title": "计数器",
+    "increase": "增加",
+    "decrease": "减少",
+    "detail": "详情页"
+  },
+  "page": {
+    "welcome": "欢迎",
+    "description": "这是一个 Next.js 应用",
+    "thisIsPage": "这是page页面",
+    "button": "按钮",
+    "admin": "这是管理员",
+    "normal": "这是普通",
+    "defaultPage": "这是默认页面"
+  },
+  "log": {
+    "contextData": "下面是context的数据",
+    "clientOnly": "这个功能只能在客户端运行"
+  },
+  "product": {
+    "addProduct": "添加产品",
+    "name": "名称",
+    "price": "价格",
+    "description": "描述",
+    "pleaseInputName": "请输入名称！",
+    "pleaseInputPrice": "请输入价格！",
+    "pleaseInputDescription": "请输入描述！"
+  },
+  "login": {
+    "username": "用户名",
+    "password": "密码",
+    "pleaseInputUsername": "请输入用户名！",
+    "pleaseInputPassword": "请输入密码！"
+  },
+  "list": {
+    "art": "艺术",
+    "members": "{count} 成员",
+    "online": "{count} 在线"
+  },
+  "photos": {
+    "title": "这是标题",
+    "description": "这是描述"
+  },
+  "error": {
+    "globalError": "捕获 layout、header这种顶层的错误",
+    "notFoundTitle": "抱歉，我们找不到这个页面。",
+    "notFoundDescription": "但不用担心，您可以在我们的主页上找到很多其他内容。",
+    "backToHomepage": "返回主页"
+  },
+  "component": {
+    "clientComponent": "这是客户端组件",
+    "serverComponent": "这是服务端组件"
+  },
+  "detail": {
+    "productList": "商品详情列表页面",
+    "productDetail": "商品详情-{id}",
+    "productDetailPage": "商品详情页面-{id}",
+    "test": "测试"
+  }
+}

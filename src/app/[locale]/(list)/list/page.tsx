@@ -3,6 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { getTranslations, getLocale } from "next-intl/server";
 
+export async function generateMetadata() {
+  const t = await getTranslations("list");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
+
 const data = [
   {
     href: "",

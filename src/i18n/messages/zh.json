@@ -65,6 +65,8 @@
     "pleaseInputPassword": "请输入密码！"
   },
   "list": {
+    "title": "艺术画廊",
+    "description": "浏览精选艺术作品集，发现创意灵感",
     "art": "艺术",
     "members": "{count} 成员",
     "online": "{count} 在线"

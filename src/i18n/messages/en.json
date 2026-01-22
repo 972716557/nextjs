@@ -65,6 +65,8 @@
     "pleaseInputPassword": "Please input your password!"
   },
   "list": {
+    "title": "Art Gallery",
+    "description": "Browse curated art collections and discover creative inspiration",
     "art": "Art",
     "members": "{count} members",
     "online": "{count} Online"
